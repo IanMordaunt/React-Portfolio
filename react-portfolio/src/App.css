@@ -1,4 +1,9 @@
 
+* {
+    background-color: black;
+}
+
+
 .nav {
     justify-content: center;
 }
@@ -8,4 +13,8 @@
     color: rgb(21, 146, 104);
     margin-top: 2%;
     font-size: 5rem;
+}
+
+.mainPage {
+    background-color: black;
 }

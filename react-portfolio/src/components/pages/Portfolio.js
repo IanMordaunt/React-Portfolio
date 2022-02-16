@@ -1,27 +1,23 @@
 import React, { useState } from "react";
-import { Card, Button, Col } from "react-bootstrap";
+import { Card, Button, Col, Row } from "react-bootstrap";
 import "./Portfolio.css";
-import Stoxster from '../../Assets/portfolio/Stox-ster.png'
 
-
-function Portfolio(projects) {
-
-  
+function Portfolio() {
   const [work] = useState([
     {
       name: "Stox-ster",
-      image: '../../Assets/portfolio/Stox-ster.png',
+      image: "Stox-ster",
       description: "Node.js, SQL, Handlebars, Express, Dcrypt, Dotenv",
-      link: "",
+      link: "https://ianmordaunt.github.io/Stox-ster/",
       github: "https://github.com/IanMordaunt/Stox-ster",
     },
-    // {
-    //   name: "Tech Blog",
-    //   image: "TechBlog-Img-Element",
-    //   description: "Node.js, SQL, Hanldebars, Express, Bcrypt, Dotenv",
-    //   link: "",
-    //   github: "",
-    // },
+    {
+      name: "Auto Part Inventory Tracker",
+      image: "Auto-Part-Inv-Tracker",
+      description: "Node.js, SQL, Hanldebars, Express, Bcrypt, Dotenv",
+      link: "",
+      github: "",
+    },
     // {
     //   name: "",
     //   id: "",
@@ -29,13 +25,13 @@ function Portfolio(projects) {
     //   link: "",
     //   github: "",
     // },
-    // {
-    //   name: "Weather Dashboard",
-    //   image: "WeatherDash-Img-Element",
-    //   description: "JS, HTML, CSS, Server Side APIs",
-    //   link: "",
-    //   github: "",
-    // },
+    {
+      name: "Weather Dashboard",
+      image: "weather-dashboard",
+      description: "JS, HTML, CSS, Server Side APIs",
+      link: "",
+      github: "",
+    },
     // {
     //   name: "Workday Scheduler",
     //   image: "WorkDay-Img-Element",
@@ -56,47 +52,41 @@ function Portfolio(projects) {
     //   description: "HTML, CSS",
     //   link: "",
     //   github: "",
-    // },
+    // },,,
   ]);
-
-  const { name, id, description, link, github } = work
 
   return (
     <div>
-      <h2 className="my-work">Work Portfolio</h2>
+      <h2 className="my-work">Project Library</h2>
       <section className="my-3">
         <div className="portfolio-div">
           {work.map((example, i) => (
+            <Row>
             <Card key={example.name} id={example.id} className="WorkCard">
               <Col className="img-col">
                 <img
-                  src={`${example.image}`}
-                  alt="Img of Stox-ster App"
-                  className="project-bg"
+                  src={require(`../../Assets/portfolio/${example.image}.png`)}
+                  alt="Img of portfolio project"
+                  className="project-image"
                 />
               </Col>
               <Card.Body>
                 <Col>
-                  <Card.Text>{example.description}</Card.Text>
+                  <Card.Text className="description">
+                    {example.description}
+                  </Card.Text>
                 </Col>
                 <div>
-                  <Button
-                    className="portBtn"
-                    variant="primary"
-                    href={example.link}
-                  >
+                  <Button className="portBtn" href={example.link}>
                     {example.name}
                   </Button>
-                  <Button
-                    className="portBtn2"
-                    href={example.github}
-                    className="github-link"
-                  >
+                  <Button className="portBtn" href={example.github}>
                     GitHub Repository
                   </Button>
                 </div>
               </Card.Body>
             </Card>
+            </Row>
           ))}
         </div>
       </section>
