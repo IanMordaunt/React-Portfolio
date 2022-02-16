@@ -1,12 +1,9 @@
 import React from "react";
-
-const styles = {
-
-}
+import './Header.css'
 
 function Header() {
     return (
-        <h1 className=""> Ian Mordaunt </h1>
+        <h1 className="mainHeader"> Ian Mordaunt </h1>
 
     )   
     };

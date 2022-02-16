@@ -1,0 +1,32 @@
+
+.cardContainer {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    max-width: 40%;
+    justify-content: center;
+    box-shadow: 2px 2px 8px 5px rgb(197, 207, 218);
+    margin-left: 30%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-body {
+    justify-content: center;
+
+}
+
+ .portBtn {
+    background-color:  rgb(21, 146, 104); 
+    margin: 1rem 1rem -.5rem 1rem;
+    color:rgb(196, 194, 194);
+} 
+
+.portBtn2 {
+    background-color:  rgb(21, 146, 104); 
+    margin: 1rem 1rem -.5rem 1rem;
+    color:rgb(196, 194, 194);
+} 

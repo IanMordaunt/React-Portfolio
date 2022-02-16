@@ -1,16 +1,11 @@
 import React from "react";
-// import '../App.css'
+import './NavTabs.css';
 
-const styles = {
-    nav: {
-        justifyContent: 'end'
-    }
 
-}
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs" style={styles.nav}>
+    <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#about me"
