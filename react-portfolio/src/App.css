@@ -1,7 +1,9 @@
 
-* {
-  background-color: white;
+body {
+  height: 100%;
 }
+
+
 /* Header / Nav */
 .mainHeader {
   background-color: rgb(18, 48, 92);
@@ -47,16 +49,18 @@
 }
 
 .nav-item a:hover {
-  transform: scale(1.2) !important;
+  transform: scale(1.1) !important;
   color: rgb(21, 146, 104) !important;
+}
+
+.aboutMeHead {
+  display: block;
 }
 
 .metalBack {
   height: 300px;
   width: 100%;
-  margin-top: -47%;
-  
-
+  margin-top: -41%;
 }
 
 /* Portfolio Page */
@@ -102,7 +106,7 @@
   background-color: rgb(18, 48, 92) !important;
   border-style: solid !important;
   border-color: rgb(142, 151, 148) !important;
-  border-radius: 10% !important;
+  border-radius: 5% !important;
 }
 
 .WorkCard Col {
@@ -113,10 +117,12 @@
   width: 97%;
   height: 400px;
   margin-top: 1rem;
+  border-radius: 5% !important;
 }
 
 .description {
   color: lightslategray;
+  font-size: 22px !important;
 }
 
 .portBtn {
@@ -124,6 +130,7 @@
   margin: 1rem 1rem 0.4rem 1rem !important;
   color: rgb(196, 194, 194) !important;
   border-color: rgb(21, 146, 104) !important;
+  border-width: 4px !important;
   font-weight: bolder !important;
   font-family: "Raleway", sans-serif;
   font-size: 25px !important;
@@ -140,7 +147,6 @@
 
 .skills {
   transform: scale(4.4)!important;
-  transform: scale3d(2)!important;
 }
 
 .skills li {
@@ -234,7 +240,7 @@
   width: 50% !important;
 }
 
-contactBtn {
+.contactBtn {
   background-color: rgb(18, 48, 92) !important;
   margin: 1rem 1rem 0.4rem 1rem !important;
   color: rgb(196, 194, 194) !important;
@@ -246,19 +252,39 @@ contactBtn {
 
 .footerContainer {
   justify-content: center;
-  align-items: center;
-  background-color: rgb(18, 48, 92)!important;
-}
-
-.footerContainer a {
-  list-style: none;
-  transform: scale(1.5);
+  align-items: center; 
+  min-height: 32px;
+  margin-top: 60px;
+  
 }
 
 .github2 {
-  justify-content: center;
-  transform: scale(1.5);
+  
+  margin: 3.5px 100px 5px 2px;
+  transform: scale(4);
+  color: blueviolet;
 }
+
+.github3 {
+  margin: 4px -30px 5px 2px;
+  transform: scale(4);
+  color: rgb(14, 47, 119)!important;
+}
+
+.footerInfo {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 110px;
+  display: inline-flex;
+  width: 100%;
+  border-style: solid;
+  border-color: rgb(18, 48, 92)!important;
+  border-width: 7px;
+  
+}
+
+
 
 
 
