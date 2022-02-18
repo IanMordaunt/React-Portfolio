@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Card, Button, Col, Row } from "react-bootstrap";
-import "./Portfolio.css";
+import "../../App.css";
 
 function Portfolio() {
   const [work] = useState([
     {
       name: "Stox-ster",
       image: "Stox-ster",
-      description: "Node.js, SQL, Handlebars, Express, Dcrypt, Dotenv",
+      description: "Stox-ster is a personalized stock trading application",
+      tech: "Node.js, SQL, Handlebars, Express, Dcrypt, Dotenv" ,
       link: "https://ianmordaunt.github.io/Stox-ster/",
       github: "https://github.com/IanMordaunt/Stox-ster",
     },
@@ -18,13 +19,13 @@ function Portfolio() {
       link: "",
       github: "",
     },
-    // {
-    //   name: "",
-    //   id: "",
-    //   description: "JS, HTML, CSS, Server Side APIs",
-    //   link: "",
-    //   github: "",
-    // },
+    {
+      name: "Team Generator",
+      image: "team_generator",
+      description: "JS, HTML, CSS, Server Side APIs",
+      link: "",
+      github: "",
+    },
     {
       name: "Weather Dashboard",
       image: "weather-dashboard",
@@ -57,11 +58,12 @@ function Portfolio() {
 
   return (
     <div>
-      <h2 className="my-work">Project Library</h2>
+      <div className="projTitle">
+      <h2 className="my-work">- Projects -</h2>
+      </div>
       <section className="my-3">
         <div className="portfolio-div">
           {work.map((example, i) => (
-            <Row>
             <Card key={example.name} id={example.id} className="WorkCard">
               <Col className="img-col">
                 <img
@@ -74,19 +76,20 @@ function Portfolio() {
                 <Col>
                   <Card.Text className="description">
                     {example.description}
+                    <br></br>
+                    {example.tech}
                   </Card.Text>
                 </Col>
                 <div>
-                  <Button className="portBtn" href={example.link}>
+                  <Button className="portBtn" href={example.link} traget='_blank'>
                     {example.name}
                   </Button>
-                  <Button className="portBtn" href={example.github}>
+                  <Button className="portBtn" href={example.github} traget='_blank'>
                     GitHub Repository
                   </Button>
                 </div>
               </Card.Body>
             </Card>
-            </Row>
           ))}
         </div>
       </section>
