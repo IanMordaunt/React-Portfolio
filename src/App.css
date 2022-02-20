@@ -1,0 +1,316 @@
+html,
+body {
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+.page-container {
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100% !important;
+  
+}
+
+.inside{
+  padding: 20px !important;
+  padding-bottom: 50px !important;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+/* Header / Nav */
+.mainHeader {
+  background-color: rgb(18, 48, 92);
+  height: 200px;
+  
+}
+
+.headerName {
+  text-align: center;
+  color: rgb(220, 236, 190);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 5.7rem;
+  background-color: rgb(18, 48, 92);
+  font-family: 'Raleway', sans-serif;
+  max-width: 40%;
+  margin-left: 3%;
+  border-radius: 20px;
+  padding: 6px 1px 6px 2px ;
+  margin-bottom: 2rem;
+  -webkit-text-stroke: 0.3vw rgb(142, 151, 148);
+  text-transform: uppercase;
+  padding-top: 3%;
+}
+
+
+.nav {
+  justify-content: end;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-top: -6%;
+  background-color: rgb(18, 48, 92);
+  margin-right: 1%;
+}
+
+.nav-item a {
+  color: rgb(220, 236, 190);
+  font-weight: 700;
+  background-color: rgb(18, 48, 92);
+  font-size: 32.5px;
+  text-transform: uppercase ;
+}
+
+.nav-item a:hover {
+  transform: scale(1.1) !important;
+  color: rgb(21, 146, 104) !important;
+}
+
+.aboutMeHead {
+  display: block;
+}
+
+.metalBack {
+  height: 300px;
+  width: 100%;
+  margin-top: -41%;
+}
+
+/* Portfolio Page */
+
+.projTitle {
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.my-work {
+  margin-top: 2%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin-left: 41%;
+  color: rgb(220, 236, 190);
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-style: solid;
+  background-color: rgb(18, 48, 92);
+  border-color:  rgb(220, 236, 190);
+  border-width: 5px;
+}
+
+
+.portfolio-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WorkCard {
+  width: 40%;
+  justify-content: center;
+  box-shadow: 2px 2px 16px 8px rgb(142, 151, 148) !important;
+  margin: 2% 2% 2% 2%;
+  margin-bottom: 2.25rem;
+  text-align: center;
+  background-color: rgb(18, 48, 92) !important;
+  border-style: solid !important;
+  border-color: rgb(142, 151, 148) !important;
+  border-radius: 5% !important;
+}
+
+.WorkCard Col {
+  background-color: rgb(18, 48, 92) !important;
+}
+
+.project-image {
+  width: 97%;
+  height: 400px;
+  margin-top: 1rem;
+  border-radius: 5% !important;
+}
+
+.description {
+  color: lightslategray;
+  font-size: 22px !important;
+}
+
+.portBtn {
+  background-color: rgb(18, 48, 92) !important;
+  margin: 1rem 1rem 0.4rem 1rem !important;
+  color: rgb(196, 194, 194) !important;
+  border-color: rgb(21, 146, 104) !important;
+  border-width: 4px !important;
+  font-weight: bolder !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px !important;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
+
+.skills-list {
+  padding-top: 20px;
+}
+
+.skills {
+  transform: scale(4.4);
+}
+
+.skills-list ul {
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+.skills li {
+  padding-right: 9px;
+  display: inline;
+  align-items: center;
+}
+
+.html {
+  color: red; 
+}
+
+.css {
+  color: blue; 
+}
+
+.js {
+  color: rgb(231, 231, 85);
+}
+
+.node {
+  color: green;
+}
+
+.npm {
+  color: red
+}
+
+.jquery {
+  color: orange
+}
+
+.react {
+  color: rgb(52, 180, 180);
+}
+
+.handlebars {
+  color:  orange
+}
+
+.mongodb {
+  color: green;
+}
+
+.mysql {
+  color: rgb(51, 101, 194);
+}
+
+.git {
+  color: red;
+}
+
+.github {
+  color: purple;
+}
+
+.heroku {
+  color: rgb(209, 102, 120);
+}
+
+.vscode {
+  color: rgb(19, 76, 150);
+}
+
+.contactTitle {
+  margin-top: 2%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 37%;
+  color: rgb(220, 236, 190);
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-style: solid;
+  background-color: rgb(18, 48, 92);
+  border-color:  rgb(220, 236, 190);
+  border-width: 5px;
+}
+
+.formcontainer {
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 170px !important;
+}
+
+.contactForm {
+  margin-left: 27%;
+  justify-content: center;
+  align-items: center;
+  width: 50% !important;
+  
+}
+
+.contactBtn {
+  background-color: rgb(18, 48, 92) !important;
+  margin: 1rem 1rem 0.4rem 1rem !important;
+  color: rgb(220, 236, 190);
+  border-color: rgb(220, 236, 190);
+  border-width: 5px !important;
+  font-weight: bolder !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 27px !important;
+}
+
+.btnOrion {
+  margin-left: 38%;
+}
+
+.footerContainer
+{
+  height: 50px !important;
+  margin-top: -50px !important;
+}
+
+.github2 {
+  margin: 3.5px 100px 5px 2px;
+  transform: scale(4);
+  color: blueviolet;
+}
+
+.github3 {
+  margin: 4px -30px 5px 2px;
+  transform: scale(4);
+  color: rgb(14, 47, 119) !important;
+}
+
+.footerInfo {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 110px;
+  display: inline-flex;
+  width: 100%;
+  border-style: solid;
+  border-color: rgb(18, 48, 92) !important;
+  border-width: 7px;
+}

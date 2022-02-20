@@ -1,0 +1,56 @@
+
+
+.h11 {
+    margin-top: -250px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    color: rgb(142, 151, 148);
+    font-weight: 400;
+    background-color: rgb(12, 94, 114);
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.h12 {
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    color: rgb(12, 94, 114);
+    font-weight: 400;
+
+}
+
+.aboutmeDesc {
+    padding-top: 50px;
+    margin-left: 16%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(12, 94, 114);
+    font-family: 'Raleway', sans-serif;
+    width: 67%;
+    font-size: 28px;
+}
+
+.profileImg {
+    transform: scale(.42);
+    margin-top: -11%;
+    align-items: center;
+    justify-content: center;
+   border-radius: 15%;
+    
+}
+
+.aboutMeHead {
+    height: 500px;
+    padding-top: -50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 94, 114);
+}
+
+
+
